@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'database.dart'; // Sesuaikan dengan lokasi file database.dart
+import 'database.dart';
 
 class CashFlowPage extends StatefulWidget {
   @override

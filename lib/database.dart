@@ -17,11 +17,11 @@ class DatabaseHelper {
 
   Future<Database> initDatabase() async {
     String path = join(await getDatabasesPath(),
-        'sertifikasi.db'); // Ganti 'nama_database' sesuai dengan nama database Anda
+        'sertifikasi.db');
 
     return await openDatabase(
       path,
-      version: _databaseVersion, // Gunakan versi yang telah ditingkatkan
+      version: _databaseVersion,
       onCreate: _createDatabase,
       onUpgrade: _upgradeDatabase,
     );
@@ -50,17 +50,17 @@ class DatabaseHelper {
   //   ''');
   // }
 
-  if (oldVersion < 4) {
-    await db.execute('''
-      CREATE TABLE users(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        username TEXT NOT NULL,
-        password TEXT NOT NULL
-      )
-    ''');
+  // if (oldVersion < 4) {
+  //   await db.execute('''
+  //     CREATE TABLE users(
+  //       id INTEGER PRIMARY KEY AUTOINCREMENT,
+  //       username TEXT NOT NULL,
+  //       password TEXT NOT NULL
+  //     )
+  //   ''');
     // Insert data pengguna default jika diperlukan
-    await db.insert('users', {'username': 'user', 'password': 'user'});
-  }
+    // await db.insert('users', {'username': 'user', 'password': 'user'});
+  // }
 }
   
 

@@ -58,11 +58,11 @@ class _BerandaPageState extends State<BerandaPage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Pengeluaran: \$${totalPengeluaran.toStringAsFixed(2)}',
+                  'Pengeluaran: \Rp${totalPengeluaran.toStringAsFixed(2)}',
                   style: TextStyle(color: Colors.red),
                 ),
                 Text(
-                  'Pemasukan: \$${totalPemasukan.toStringAsFixed(2)}',
+                  'Pemasukan: \Rp${totalPemasukan.toStringAsFixed(2)}',
                   style: TextStyle(color: Colors.green),
                 ),
               ],
@@ -73,8 +73,8 @@ class _BerandaPageState extends State<BerandaPage> {
             alignment: Alignment.center,
             padding: EdgeInsets.only(top: 20.0), // Sesuaikan dengan kebutuhan
             child: Image.asset(
-              'assets/chart.png', // Ganti dengan path gambar Anda
-              width: 350.0, // Sesuaikan dengan ukuran gambar Anda
+              'assets/chart.png', 
+              width: 350.0, 
             ),
           ),
           Expanded(
@@ -126,7 +126,7 @@ class _BerandaPageState extends State<BerandaPage> {
                         MaterialPageRoute(builder: (context) => SettingPage()),
                       );
 
-                      // Tambahkan logika untuk pindah ke halaman Pengaturan
+                      
                     },
                   ),
                 ],

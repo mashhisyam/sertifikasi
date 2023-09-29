@@ -52,14 +52,14 @@ class _LoginPageState extends State<LoginPage> {
           children: <Widget>[
             // Logo Aplikasi
             Image.asset(
-              'assets/logo.png', // Ganti dengan path logo aplikasi Anda
-              width: 120.0, // Sesuaikan ukuran logo
+              'assets/logo.png', 
+              width: 120.0,
             ),
             SizedBox(height: 12.0),
 
             // Nama Aplikasi
             Text(
-              'Cashbook', // Ganti dengan nama aplikasi Anda
+              'Cashbook', 
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,

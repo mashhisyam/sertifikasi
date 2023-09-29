@@ -78,34 +78,34 @@ class _SettingPageState extends State<SettingPage> {
             // Informasi Pembuat Aplikasi
             Row(
               children: <Widget>[
-                // Foto Pembuat Aplikasi
+              
                 CircleAvatar(
                   radius: 50.0,
                   backgroundImage: AssetImage(
                       'assets/1941720186.jpg'),
-                       // Ganti dengan path foto Anda
+                     
                 ),
                 SizedBox(width: 20.0),
               
 
-                // Nama Pembuat Aplikasi dan Nomor Handphone
+               
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'About This App', // Ganti dengan nama Anda
+                      'About This App', 
                       style: TextStyle(fontSize: 20.0),
                     ),
                     Text(
-                      'Nama: Hisyam Haryo Mahdyan', // Ganti dengan nama Anda
+                      'Nama: Hisyam Haryo Mahdyan', 
                       style: TextStyle(fontSize: 15.0),
                     ),
                     Text(
-                      'NIM: 1941720186', // Ganti dengan nomor handphone Anda
+                      'NIM: 1941720186',
                       style: TextStyle(fontSize: 15.0),
                     ),
                     Text(
-                      'Tanggal: 28 September 2023', // Ganti dengan nomor handphone Anda
+                      'Tanggal: 28 September 2023',
                       style: TextStyle(fontSize: 15.0),
                     ),
                   ],
